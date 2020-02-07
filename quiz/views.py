@@ -22,6 +22,6 @@ class Message(APIView):
     def get(self, request):
         return Response(data="class based view to get", status=status.HTTP_200_OK)
 
-    def post(self, request):
+    def post(self, request, id):
         print(request.data)
         return Response(data="class based view to post", status=status.HTTP_200_OK)
